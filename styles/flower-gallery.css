@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin:0;
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    color: #dda0dd;
+    line-height: 1.6;
+}
+
+header{
+    position: fixed;
+    top:0; left:0; right:0;
+    background:#dda0dd;
+    padding:2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  }
+
+
+  header .header_text {
+    font-family:'Rouge Script', cursive;
+    font-size: 50px;
+    color: #800080;
+
+  }
+  header .navbar a{
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    padding:0 1.5rem;
+    color:#800080;
+  }
+
+  header .navbar a:hover{
+    color: #f5f5f5;
+  }
+
+  header .icons a{
+    font-size: 2.5rem;
+    color:#800080;
+    margin-left: 1.5rem;
+  }
+
+  header .icons a:hover{
+    color: #f5f5f5;
+  }
+
+  .top{
+    margin-top: 10rem;
+  }
+
+
+
+  .main_container {
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    margin-bottom: 60px;
+    gap: 15px;
+    row-gap: 50px;
+    width: 80%;
+}
+
+.img_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flowers1 {
+    grid-area: 1/1/2/2;
+}
+
+.flowers2 {
+    grid-area: 1/2/2/3;
+}
+
+.flowers3 {
+    grid-area: 1/3/2/4;
+}
+
+.flowers4 {
+    grid-area: 1/4/2/5;
+}
+
+.flowers5 {
+    grid-area: 2/1/3/2;
+}
+
+.flowers6 {
+    grid-area: 2/2/3/3;
+}
+
+.img_size {
+    height: 100%;
+    width: 100%;
+}
+
+.img_size:hover {
+    border: 5px solid #800080;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.img_btn {
+    position: relative;
+    top: 20px;
+    font-family: 'Playfair Display' , cursive;
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 20px;
+    text-align: center;
+    width: 100px;
+    height:40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #dda0dd;
+}
+
+.img_btn:hover{
+    background-color: #800080;
+    transition: all 0.3s ease-in-out;
+}
